@@ -186,6 +186,18 @@ nav ul li a {
   color: white;
   font-size: 1.2rem;
 }
+.nav-show {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
+  background-color: #008fd3;
+}
+#home {
+  justify-self: flex-start;
+  flex-basis: 100%;
+  order: 0;
+  text-align: left;
+  margin-left: 10px;
+}
 .wrapper {
   position: relative;
 }
@@ -252,16 +264,9 @@ nav ul li a {
   font-size: 1.65rem;
   box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
 }
-#home {
-  justify-self: flex-start;
-  flex-basis: 100%;
-  order: 0;
-  text-align: left;
-  margin-left: 10px;
-}
 .body-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 50px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -286,7 +291,7 @@ nav ul li a {
   text-align: center;
 }
 .body-container .right img {
-  width: 75%;
+  width: 90%;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -296,8 +301,13 @@ nav ul li a {
   line-height: 3rem;
   margin-top: 25px;
 }
-.footer {
+.footer-wrap {
+  filter: drop-shadow(0 -20px 25px rgba(0, 0, 0, 0.12));
+}
+.footer-wrap .footer {
   width: 100%;
-  background-color: blue;
+  background-color: #008fd3;
   height: 150px;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  z-index: 8;
 }

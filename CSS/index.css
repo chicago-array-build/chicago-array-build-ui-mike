@@ -147,6 +147,7 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 4rem;
+  line-height: 4.8rem;
 }
 nav {
   position: fixed;
@@ -243,27 +244,38 @@ nav ul li a {
 }
 .body-container {
   width: 90%;
-  margin: 50px auto;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-around;
 }
 .body-container .left {
-  width: 50%;
-  margin: 20% 0;
+  width: 36%;
+  margin: 8% 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 .body-container .left img {
-  width: 65%;
+  width: 90%;
   max-width: 100%;
   margin: 0 auto;
 }
 .body-container .right {
-  width: 40%;
-  margin: 20% 0;
-  padding: 0 5%;
+  width: 43%;
+  margin: 8% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.body-container .right img {
+  width: 75%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.body-container p {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  margin-top: 25px;
 }

@@ -10,16 +10,18 @@ addEventListener("load", function() {
   });
 });
 
-console.log(doc);
+let homepageText = ["breathe easier", "travel safer", "make decisions"];
 
-// let navBar = document.querySelector("nav");
+let counter = 0;
 
-// console.log(navBar);
+let inst = setInterval(change, 2500);
 
-// function runOnScroll() {
-//   if (document.body.scrollTop >= 120) {
-//     nav.style.color = "blue";
-//   }
-// }
+let textAnimation = document.querySelector(".homepage-text-animation");
 
-// window.addEventListener("scroll", runOnScroll);
+function change() {
+  textAnimation.innerHTML = homepageText[counter];
+  counter++;
+  if (counter >= homepageText.length) {
+    counter = 0;
+  }
+}

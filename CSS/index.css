@@ -135,7 +135,7 @@ table {
 .nav-bar ul li {
   margin: 0 20px;
 }
-.nav-bar ul li #home {
+#home {
   justify-self: flex-start;
   order: 0;
 }

@@ -125,7 +125,12 @@ table {
 body {
   font-family: "Montserrat", sans-serif;
 }
+a {
+  text-decoration: none;
+  color: #100f10;
+}
 h1 {
+  color: #100f10;
   font-weight: 700;
   font-size: 4rem;
   line-height: 95px;
@@ -141,13 +146,18 @@ h1 span {
   box-shadow: 12px 12px 31px rgba(0, 0, 0, 0.2);
 }
 h2 {
+  color: #100f10;
   font-weight: 500;
   font-size: 1.75rem;
 }
 h3 {
+  color: #100f10;
   font-weight: 700;
   font-size: 4rem;
   line-height: 4.8rem;
+}
+p {
+  color: #100f10;
 }
 nav {
   position: fixed;
@@ -168,9 +178,8 @@ nav ul {
   align-items: center;
 }
 nav ul li {
-  margin: 0 20px;
-  width: 16%;
-  text-align: right;
+  width: 10%;
+  text-align: center;
 }
 nav ul li a {
   text-decoration: none;
@@ -218,6 +227,7 @@ nav ul li a {
   right: 8%;
   z-index: 8;
   display: flex;
+  width: 35%;
   justify-content: space-between;
 }
 .button-holder .button {
@@ -225,17 +235,22 @@ nav ul li a {
   line-height: 25px;
   width: 295px;
   text-align: center;
-  margin: 0 25px;
   border-radius: 50px;
   background-color: white;
   font-size: 1.4rem;
   box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
 }
-.button-holder .button:last-child {
+.button-holder .button-right {
+  padding: 20px 0;
+  line-height: 25px;
+  width: 295px;
+  text-align: center;
+  border-radius: 50px;
   background-color: #e5001d;
   color: white;
   font-weight: 700;
   font-size: 1.65rem;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
 }
 #home {
   justify-self: flex-start;

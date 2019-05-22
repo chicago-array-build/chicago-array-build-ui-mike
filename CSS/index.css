@@ -579,6 +579,7 @@ nav .nav-active {
   width: 25%;
   height: 0;
   padding-bottom: 25%;
+  position: relative;
 }
 @media screen and (max-width: 1000px) {
   .block {
@@ -595,13 +596,35 @@ nav .nav-active {
   }
 }
 .block1 {
-  background-color: red;
+  background: url(/images/david.jpg) no-repeat;
+  background-size: cover;
+}
+.block1:hover .block1-overlay {
+  opacity: 0.6;
+}
+.block1-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  transition: 0.5s ease;
+  background-color: black;
 }
 .block2 {
-  background-color: blue;
+  background: url(/images/josh.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+.block2:hover .block1-overlay {
+  opacity: 0.6;
 }
 .block3 {
-  background-color: green;
+  background: url(/images/mike.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+.block3:hover .block1-overlay {
+  opacity: 0.6;
 }
 .block4 {
   background-color: purple;

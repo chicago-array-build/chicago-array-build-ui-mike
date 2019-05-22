@@ -272,17 +272,27 @@ nav .nav-active {
   background-image: url("../images/chicago-skyline.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120vh;
+  height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  .home-bg {
+    height: 100vh;
+  }
 }
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   z-index: 7;
   background-image: linear-gradient(20deg, rgba(0, 72, 106, 0.8), rgba(0, 143, 211, 0.8));
   clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+}
+@media screen and (max-width: 600px) {
+  .overlay {
+    height: 100vh;
+  }
 }
 .tagline {
   position: absolute;
@@ -303,6 +313,11 @@ nav .nav-active {
   .tagline {
     display: block;
     text-align: center;
+    font-size: calc(3.2rem + 0.5vw);
+    line-height: calc(1.5em + 0.5vw);
+    width: 75%;
+    top: 30vh;
+    left: 12.5%;
   }
 }
 .tagline span {
@@ -325,6 +340,8 @@ nav .nav-active {
   .tagline span {
     display: block;
     text-align: center;
+    font-size: calc(2rem + 0.3vw);
+    padding: 5px;
   }
 }
 .subheading {
@@ -351,7 +368,7 @@ nav .nav-active {
 }
 .button-holder {
   position: absolute;
-  bottom: 28%;
+  bottom: 20%;
   right: 8%;
   z-index: 8;
   display: flex;
@@ -363,12 +380,14 @@ nav .nav-active {
     flex-direction: column;
     justify-content: space-betweem;
     bottom: 20%;
+    right: 0;
   }
 }
 @media screen and (max-width: 600px) {
   .button-holder {
     width: 75%;
     right: 12.5%;
+    bottom: 10%;
   }
 }
 .button-holder a {
@@ -424,6 +443,14 @@ nav .nav-active {
     width: 100%;
   }
 }
+.mobile-description {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobile-description {
+    display: inline-block;
+  }
+}
 .body-container {
   width: 85%;
   margin: 50px auto;
@@ -433,18 +460,23 @@ nav .nav-active {
 @media screen and (max-width: 1000px) {
   .body-container {
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 .body-container .left {
   width: 36%;
   margin: 8% 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 @media screen and (max-width: 1000px) {
   .body-container .left {
     width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .body-container .left {
+    width: 85%;
+    flex-wrap: wrap;
+    order: 2;
   }
 }
 .body-container .left img {
@@ -452,17 +484,28 @@ nav .nav-active {
   max-width: 100%;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .body-container .left img {
+    margin-bottom: 45px;
+  }
+}
 .body-container .right {
   width: 43%;
   margin: 8% 0;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 @media screen and (max-width: 1000px) {
   .body-container .right {
     width: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .body-container .right {
+    width: 85%;
+    flex-wrap: wrap;
+    margin: 0;
+    order: 1;
   }
 }
 .body-container .right img {
@@ -480,6 +523,13 @@ nav .nav-active {
   .body-container p {
     font-size: calc(0.8rem + 0.5vw);
     line-height: calc(1.6em + 0.5vw);
+  }
+}
+@media screen and (max-width: 600px) {
+  .body-container p {
+    font-size: calc(1.2rem + 0.5vw);
+    line-height: calc(2em + 0.5vw);
+    margin-bottom: 25px;
   }
 }
 .our-team {

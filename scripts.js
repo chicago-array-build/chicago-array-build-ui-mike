@@ -32,8 +32,23 @@ function change() {
   }
 }
 
-const burgerButton = document.querySelector(".hamburger");
+const navSlide = () => {
+  const burgerButton = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-burgerButton.addEventListener("click", function() {
-  burgerButton.classList.toggle("is-active");
-});
+  burgerButton.addEventListener("click", function() {
+    burgerButton.classList.toggle("is-active");
+    navMenu.classList.toggle("nav-active");
+    navLinks.forEach((el, index) => {
+      if (el.style.animation) {
+        el.style.animation = "";
+      } else {
+        el.style.animation = `navLinkFade 0.3s ease forwards ${index / 7 +
+          0.2}s`;
+      }
+    });
+  });
+};
+
+navSlide();

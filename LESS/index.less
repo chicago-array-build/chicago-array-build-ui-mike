@@ -145,13 +145,14 @@ h2 {
   color: #100f10;
   font-weight: 500;
   font-size: calc(0.9rem + 0.5vw);
+  line-height: calc(1.8em + 0.5vw);
 }
 
 h3 {
   color: #100f10;
   font-weight: 700;
-  font-size: 3.8rem;
-  line-height: 4.8rem;
+  font-size: calc(2.8rem + 0.5vw);
+  line-height: calc(1.2em + 0.5vw);
 }
 
 p {
@@ -179,12 +180,15 @@ nav {
     align-items: center;
     li {
       // margin: 0 20px;
-      width: 10%;
+      width: 12%;
       text-align: center;
       a {
         text-decoration: none;
         color: white;
-        font-size: 1.2rem;
+        font-size: calc(0.6em + 0.5vw);
+        &:hover {
+          color: #a1d4ee;
+        }
       }
     }
   }
@@ -202,6 +206,13 @@ nav {
   order: 0;
   text-align: left;
   margin-left: 10px;
+  p {
+    color: white;
+
+    .span-bold {
+      font-weight: 700;
+    }
+  }
 }
 
 .wrapper {
@@ -255,7 +266,6 @@ nav {
   color: white;
   z-index: 8;
   width: 35%;
-  line-height: calc(1.8em + 0.5vw);
 }
 
 .button-holder {
@@ -277,6 +287,9 @@ nav {
     background-color: white;
     font-size: calc(0.8rem + 0.5vw);
     box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color: #e2e2e2;
+    }
   }
 
   .button-right {
@@ -291,6 +304,9 @@ nav {
     font-weight: 700;
     font-size: calc(0.9rem + 0.5vw);
     box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background-color: #e93f4c;
+    }
   }
 }
 
@@ -326,8 +342,8 @@ nav {
   }
   p {
     font-weight: 500;
-    font-size: 1.65rem;
-    line-height: 3rem;
+    font-size: calc(0.9rem + 0.5vw);
+    line-height: calc(1.8em + 0.5vw);
     margin-top: 25px;
   }
 }
@@ -336,10 +352,18 @@ nav {
   filter: drop-shadow(0 -20px 25px rgba(0, 0, 0, 0.12));
 
   .footer {
+    position: relative;
     width: 100%;
     background-color: #008fd3;
     height: 150px;
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-    z-index: 8;
   }
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 50px;
+  margin-left: 40%;
+  text-align: center;
+  color: white;
 }

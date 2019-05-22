@@ -140,6 +140,11 @@ h1 {
   line-height: 95px;
   text-shadow: 12px 12px 31px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: calc(2.5rem + 1vw);
+  }
+}
 h2 {
   color: #100f10;
   font-weight: 500;
@@ -151,6 +156,12 @@ h3 {
   font-weight: 700;
   font-size: calc(2.8rem + 0.5vw);
   line-height: calc(1.2em + 0.5vw);
+}
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: calc(2rem + 0.5vw);
+    line-height: calc(1.2em + 0.5vw);
+  }
 }
 p {
   color: #100f10;
@@ -177,6 +188,11 @@ nav ul li {
   width: 12%;
   text-align: center;
 }
+@media screen and (max-width: 1000px) {
+  nav ul li {
+    width: 25%;
+  }
+}
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -199,6 +215,11 @@ nav ul li a:hover {
 }
 #home p {
   color: white;
+}
+@media screen and (max-width: 600px) {
+  #home p {
+    display: none;
+  }
 }
 #home p .span-bold {
   font-weight: 700;
@@ -229,6 +250,14 @@ nav ul li a:hover {
   z-index: 8;
   color: white;
 }
+@media screen and (max-width: 1000px) {
+  .tagline {
+    left: 7%;
+    top: 200px;
+    font-size: calc(2rem + 0.5vw);
+    line-height: calc(1.5em + 0.5vw);
+  }
+}
 .tagline span {
   color: #005ca8;
   font-size: calc(2rem + 0.5vw);
@@ -238,6 +267,13 @@ nav ul li a:hover {
   background-color: white;
   box-shadow: 12px 12px 31px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 1000px) {
+  .tagline span {
+    padding: 15px 40px;
+    margin-left: 10px;
+    font-size: calc(1.5rem + 0.3vw);
+  }
+}
 .subheading {
   position: absolute;
   top: 370px;
@@ -245,6 +281,15 @@ nav ul li a:hover {
   color: white;
   z-index: 8;
   width: 35%;
+}
+@media screen and (max-width: 1000px) {
+  .subheading {
+    left: 7%;
+    top: 300px;
+    width: 45%;
+    font-size: calc(0.9rem + 0.5vw);
+    line-height: calc(1.7em + 0.5vw);
+  }
 }
 .button-holder {
   position: absolute;
@@ -254,6 +299,17 @@ nav ul li a:hover {
   display: flex;
   width: 35%;
   justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  .button-holder {
+    flex-direction: column;
+    justify-content: space-betweem;
+    bottom: 20%;
+    right: 2%;
+  }
+}
+.button-holder a {
+  margin-top: 20px;
 }
 .button-holder .button {
   padding: 20px 0;
@@ -268,7 +324,13 @@ nav ul li a:hover {
 .button-holder .button:hover {
   background-color: #e2e2e2;
 }
-.button-holder .button-right {
+@media screen and (max-width: 1000px) {
+  .button-holder .button {
+    width: 25vw;
+    padding: 12px 0;
+  }
+}
+.button-right {
   padding: 20px 0;
   line-height: 25px;
   width: 15vw;
@@ -280,8 +342,14 @@ nav ul li a:hover {
   font-size: calc(0.9rem + 0.5vw);
   box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
 }
-.button-holder .button-right:hover {
+.button-right:hover {
   background-color: #e93f4c;
+}
+@media screen and (max-width: 1000px) {
+  .button-right {
+    padding: 12px 0;
+    width: 25vw;
+  }
 }
 .body-container {
   width: 85%;
@@ -289,12 +357,22 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 1000px) {
+  .body-container {
+    width: 100%;
+  }
+}
 .body-container .left {
   width: 36%;
   margin: 8% 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .body-container .left {
+    width: 45%;
+  }
 }
 .body-container .left img {
   width: 90%;
@@ -309,6 +387,11 @@ nav ul li a:hover {
   justify-content: center;
   text-align: center;
 }
+@media screen and (max-width: 1000px) {
+  .body-container .right {
+    width: 35%;
+  }
+}
 .body-container .right img {
   width: 90%;
   max-width: 100%;
@@ -320,11 +403,26 @@ nav ul li a:hover {
   line-height: calc(1.8em + 0.5vw);
   margin-top: 25px;
 }
+@media screen and (max-width: 1000px) {
+  .body-container p {
+    font-size: calc(0.8rem + 0.5vw);
+    line-height: calc(1.6em + 0.5vw);
+  }
+}
+.our-team {
+  padding: 170px 0 0 8%;
+}
+.team-text p {
+  font-weight: 500;
+  font-size: calc(0.9rem + 0.5vw);
+  line-height: calc(1.8em + 0.5vw);
+  margin-top: 10px;
+  padding: 0 0 50px 8%;
+}
 .team-blocks {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 110px;
 }
 .block {
   width: 25%;
@@ -372,4 +470,94 @@ nav ul li a:hover {
   margin-left: 40%;
   text-align: center;
   color: white;
+}
+@media screen and (max-width: 1000px) {
+  .footer-text {
+    margin-left: 30%;
+  }
+}
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.hamburger--spin .hamburger-inner::after {
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }

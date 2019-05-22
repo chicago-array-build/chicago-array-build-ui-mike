@@ -22,7 +22,7 @@ let counter = 0;
 
 let inst = setInterval(change, 2500);
 
-let textAnimation = document.querySelector(".homepage-text-animation");
+const textAnimation = document.querySelector(".homepage-text-animation");
 
 function change() {
   textAnimation.innerHTML = homepageText[counter];
@@ -31,3 +31,9 @@ function change() {
     counter = 0;
   }
 }
+
+const burgerButton = document.querySelector(".hamburger");
+
+burgerButton.addEventListener("click", function() {
+  burgerButton.classList.toggle("is-active");
+});

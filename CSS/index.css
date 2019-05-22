@@ -218,7 +218,7 @@ nav .nav-links {
 nav .nav-links li {
   text-align: center;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   nav .nav-links li {
     opacity: 0;
   }
@@ -226,7 +226,7 @@ nav .nav-links li {
 nav .nav-links li a {
   text-decoration: none;
   color: white;
-  font-size: calc(0.6em + 0.5vw);
+  font-size: calc(0.7em + 0.5vw);
 }
 nav .nav-links li a:hover {
   color: #a1d4ee;
@@ -299,6 +299,12 @@ nav .nav-active {
     line-height: calc(1.5em + 0.5vw);
   }
 }
+@media screen and (max-width: 600px) {
+  .tagline {
+    display: block;
+    text-align: center;
+  }
+}
 .tagline span {
   color: #005ca8;
   font-size: calc(2rem + 0.5vw);
@@ -313,6 +319,12 @@ nav .nav-active {
     padding: 15px 40px;
     margin-left: 10px;
     font-size: calc(1.5rem + 0.3vw);
+  }
+}
+@media screen and (max-width: 600px) {
+  .tagline span {
+    display: block;
+    text-align: center;
   }
 }
 .subheading {
@@ -332,6 +344,11 @@ nav .nav-active {
     line-height: calc(1.7em + 0.5vw);
   }
 }
+@media screen and (max-width: 600px) {
+  .subheading {
+    display: none;
+  }
+}
 .button-holder {
   position: absolute;
   bottom: 28%;
@@ -346,7 +363,12 @@ nav .nav-active {
     flex-direction: column;
     justify-content: space-betweem;
     bottom: 20%;
-    right: 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .button-holder {
+    width: 75%;
+    right: 12.5%;
   }
 }
 .button-holder a {
@@ -371,6 +393,11 @@ nav .nav-active {
     padding: 12px 0;
   }
 }
+@media screen and (max-width: 600px) {
+  .button-holder .button {
+    width: 100%;
+  }
+}
 .button-right {
   padding: 20px 0;
   line-height: 25px;
@@ -390,6 +417,11 @@ nav .nav-active {
   .button-right {
     padding: 12px 0;
     width: 25vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .button-right {
+    width: 100%;
   }
 }
 .body-container {

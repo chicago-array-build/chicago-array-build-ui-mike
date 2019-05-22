@@ -124,8 +124,13 @@ table {
   border-spacing: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
 
 a {
@@ -348,6 +353,52 @@ nav {
   }
 }
 
+.team-blocks {
+  // min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 110px;
+}
+
+.block {
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+}
+
+.block1 {
+  background-color: red;
+}
+
+.block2 {
+  background-color: blue;
+}
+
+.block3 {
+  background-color: green;
+}
+
+.block4 {
+  background-color: purple;
+}
+
+.block5 {
+  background-color: teal;
+}
+
+.block6 {
+  background-color: yellow;
+}
+
+.block7 {
+  background-color: yellowgreen;
+}
+
+.block8 {
+  background-color: grey;
+}
+
 .footer-wrap {
   filter: drop-shadow(0 -20px 25px rgba(0, 0, 0, 0.12));
 
@@ -357,6 +408,7 @@ nav {
     background-color: #008fd3;
     height: 150px;
     clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    margin-top: -40px;
   }
 }
 

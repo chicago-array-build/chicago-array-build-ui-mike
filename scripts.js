@@ -4,7 +4,7 @@ addEventListener("load", function() {
   doc = document;
   bod = doc.body;
   htm = doc.documentElement;
-  navBar = doc.querySelector("nav");
+  navBar = doc.querySelector(".home-nav");
   addEventListener("scroll", function() {
     // doc.querySelector("nav").style.backgroundColor =
     //   htm.scrollTop > 0 ? "#008FD3" : "transparent";

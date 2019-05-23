@@ -40,6 +40,7 @@ const navSlide = () => {
   burgerButton.addEventListener("click", function() {
     burgerButton.classList.toggle("is-active");
     navMenu.classList.toggle("nav-active");
+
     navLinks.forEach((el, index) => {
       if (el.style.animation) {
         el.style.animation = "";

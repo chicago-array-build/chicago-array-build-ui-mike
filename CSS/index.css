@@ -572,6 +572,7 @@ nav .nav-active {
   width: 43%;
   margin: 8% 0;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 @media screen and (max-width: 1000px) {

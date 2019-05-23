@@ -230,7 +230,7 @@ nav .nav-links li a {
   font-size: calc(0.7em + 0.5vw);
 }
 nav .nav-links li a:hover {
-  color: #a1d4ee;
+  text-shadow: 0 0 15px white;
 }
 @media screen and (max-width: 600px) {
   nav .nav-links li a {
@@ -639,13 +639,6 @@ nav .nav-active {
     padding-bottom: 50%;
   }
 }
-.block1 {
-  background: url("../images/david.jpg") no-repeat;
-  background-size: cover;
-}
-.block1:hover .block1-overlay {
-  opacity: 0.8;
-}
 .block1-color-overlay {
   position: absolute;
   top: 0;
@@ -738,61 +731,64 @@ nav .nav-active {
   text-align: center;
 }
 .description .description-name {
-  padding: 20px 0;
-  font-size: 4rem;
+  font-size: calc(2.5rem + 0.4vw);
   font-weight: bold;
 }
 .description .description-title {
-  padding: 20px 0;
-  font-size: 2rem;
-}
-.description .description-github {
-  padding: 20px 0;
+  padding: 10% 0;
+  font-size: calc(1.5rem + 0.4vw);
 }
 .description .description-github a i {
   color: white;
+}
+.block1 {
+  background: url("../images/david.jpg") no-repeat;
+  background-size: cover;
+}
+.block1:hover .block1-overlay {
+  opacity: 1;
 }
 .block2 {
   background: url("../images/josh.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block2:hover .block1-overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .block3 {
   background: url("../images/mike.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block3:hover .block1-overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .block4 {
   background: url("../images/steve.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block4:hover .block1-overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .block8 {
   background: url("../images/mac.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block8:hover .block1-overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .block6 {
   background: url("../images/blank-profile.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block6:hover .block1-overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .block7 {
   background: url("../images/blake.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block7:hover .block1-overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 .block5 {
   background: url("../images/chris.jpg") 50% 50% no-repeat;

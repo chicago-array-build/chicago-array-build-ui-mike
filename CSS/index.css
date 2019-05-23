@@ -297,7 +297,7 @@ nav .nav-active {
 }
 .tagline {
   position: absolute;
-  top: 220px;
+  top: 200px;
   left: 8%;
   z-index: 8;
   color: white;
@@ -306,6 +306,14 @@ nav .nav-active {
   .tagline {
     left: 7%;
     top: 200px;
+    font-size: calc(2rem + 0.5vw);
+    line-height: calc(1.5em + 0.5vw);
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .tagline {
+    left: 7%;
+    top: 120px;
     font-size: calc(2rem + 0.5vw);
     line-height: calc(1.5em + 0.5vw);
   }
@@ -319,6 +327,13 @@ nav .nav-active {
     width: 75%;
     top: 30vh;
     left: 12.5%;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .tagline {
+    font-size: calc(2rem + 0.5vw);
+    line-height: calc(1.5em + 0.5vw);
+    top: 20vh;
   }
 }
 @media screen and (max-width: 380px) {
@@ -358,6 +373,12 @@ nav .nav-active {
     padding: 5px 15px;
   }
 }
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .tagline span {
+    padding: 0;
+    font-size: calc(1.8rem);
+  }
+}
 @media screen and (max-width: 380px) {
   .tagline span {
     display: block;
@@ -372,7 +393,7 @@ nav .nav-active {
 }
 .subheading {
   position: absolute;
-  top: 370px;
+  top: 330px;
   left: 8%;
   color: white;
   z-index: 8;
@@ -383,8 +404,14 @@ nav .nav-active {
     left: 7%;
     top: 300px;
     width: 45%;
-    font-size: calc(0.9rem + 0.5vw);
+    font-size: calc(0.9rem + 0.2vw);
     line-height: calc(1.7em + 0.5vw);
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .subheading {
+    top: 200px;
+    width: 60%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -394,7 +421,7 @@ nav .nav-active {
 }
 .button-holder {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   right: 8%;
   z-index: 8;
   display: flex;
@@ -405,8 +432,15 @@ nav .nav-active {
   .button-holder {
     flex-direction: column;
     justify-content: space-betweem;
-    bottom: 20%;
+    bottom: 10%;
     right: 0;
+  }
+}
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .button-holder {
+    align-items: flex-end;
+    right: 2%;
+    bottom: 8%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -414,6 +448,13 @@ nav .nav-active {
     width: 75%;
     right: 12.5%;
     bottom: 10%;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .button-holder {
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 5%;
   }
 }
 .button-holder a {
@@ -443,6 +484,11 @@ nav .nav-active {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .button-holder .button {
+    padding: 12px 15px;
+  }
+}
 .button-right {
   padding: 20px 0;
   line-height: 25px;
@@ -467,6 +513,11 @@ nav .nav-active {
 @media screen and (max-width: 600px) {
   .button-right {
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  .button-right {
+    padding: 12px 15px;
   }
 }
 .mobile-description {
@@ -588,19 +639,84 @@ nav .nav-active {
     padding-bottom: 50%;
   }
 }
-@media screen and (max-width: 600px) {
-  .block {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-  }
-}
 .block1 {
-  background: url(/images/david.jpg) no-repeat;
+  background: url("../images/david.jpg") no-repeat;
   background-size: cover;
 }
 .block1:hover .block1-overlay {
-  opacity: 0.6;
+  opacity: 0.8;
+}
+.block1-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: teal;
+}
+.block2-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: purple;
+}
+.block3-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: yellow;
+}
+.block4-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: darkorange;
+}
+.block5-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: firebrick;
+}
+.block6-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: blue;
+}
+.block7-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: orangered;
+}
+.block8-color-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: lightseagreen;
 }
 .block1-overlay {
   position: absolute;
@@ -609,10 +725,10 @@ nav .nav-active {
   left: 0;
   right: 0;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
   background-color: black;
 }
-.text {
+.description {
   color: white;
   font-size: 2rem;
   position: absolute;
@@ -621,34 +737,69 @@ nav .nav-active {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.description .description-name {
+  padding: 20px 0;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.description .description-title {
+  padding: 20px 0;
+  font-size: 2rem;
+}
+.description .description-github {
+  padding: 20px 0;
+}
+.description .description-github a i {
+  color: white;
+}
 .block2 {
-  background: url(/images/josh.jpg) 50% 50% no-repeat;
+  background: url("../images/josh.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block2:hover .block1-overlay {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .block3 {
-  background: url(/images/mike.jpg) 50% 50% no-repeat;
+  background: url("../images/mike.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .block3:hover .block1-overlay {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .block4 {
-  background-color: purple;
+  background: url("../images/steve.jpg") 50% 50% no-repeat;
+  background-size: cover;
 }
-.block5 {
-  background-color: teal;
-}
-.block6 {
-  background-color: yellow;
-}
-.block7 {
-  background-color: yellowgreen;
+.block4:hover .block1-overlay {
+  opacity: 0.8;
 }
 .block8 {
-  background-color: grey;
+  background: url("../images/mac.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.block8:hover .block1-overlay {
+  opacity: 0.8;
+}
+.block6 {
+  background: url("../images/blank-profile.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.block6:hover .block1-overlay {
+  opacity: 0.8;
+}
+.block7 {
+  background: url("../images/blake.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.block7:hover .block1-overlay {
+  opacity: 0.8;
+}
+.block5 {
+  background: url("../images/chris.jpg") 50% 50% no-repeat;
+  background-size: cover;
+}
+.block5:hover .block1-overlay {
+  opacity: 1;
 }
 .footer-wrap {
   filter: drop-shadow(0 -20px 25px rgba(0, 0, 0, 0.12));
